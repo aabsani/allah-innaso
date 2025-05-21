@@ -51,7 +51,7 @@ export default function Home() {
       </section>
 
       {/* Who we are section on homepage */}
-      <section className="about-home-layout">
+      <section className="about-home-layout home-more">
         <div className="container">
           <div className="inner-wrapper">
             <h1>Who We Are</h1>
@@ -82,7 +82,7 @@ export default function Home() {
       </section>
 
       {/* Services section on homepage */}
-      <section className="services-home-layout">
+      <section className="services-home-layout home-more">
         <div className="container">
           <div className="inner-wrapper">
             <h1>Our Services</h1>
