@@ -16,7 +16,7 @@ export default function Home() {
       {/* main section on homepage */}
       <section className="home">
         <div className="home-overlay">
-          <h1>Welcome to Allah Inna'So Nigeria Limited</h1>
+          <h1>Welcome to Allah Inna'so Nigeria Limited</h1>
           <p>
             We are a large distributor and major dealer of all kinds of frozen
             foods in Nigeria.
@@ -42,10 +42,10 @@ export default function Home() {
           className="home-slider"
         >
           <SwiperSlide>
-            <img src="/images/background-cover.jpg" alt="Slide 1" />
+            <img src="/images/background-cover-2.jpg" alt="Slide 1" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/images/background-cover-2.jpg" alt="Slide 2" />
+            <img src="/images/background-cover.jpg" alt="Slide 2" />
           </SwiperSlide>
         </Swiper>
       </section>
