@@ -1,10 +1,27 @@
 import React from "react";
+
+import { useState, useEffect } from "react";
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+  // managing scrolling state
+  const [scrolled, setScrolled] = useState(false);
+
+  // useEffect for listening to scrolling event, to change navbar appearance
+  useEffect(() => {
+    const handleScroll = () => {
+      // if user scrolls more than 50px vertically, scrolled becomes true
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
       <div>
         <img src="./images/logo-1.jpeg" alt="logo" className="logo" />
       </div>
