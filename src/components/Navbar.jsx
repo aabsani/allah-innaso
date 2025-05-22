@@ -2,7 +2,7 @@ import React from "react";
 
 import { useState, useEffect } from "react";
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   // managing scrolling state
@@ -27,19 +27,29 @@ export default function Navbar() {
       </div>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <NavLink to="/" className="nav-item">
+            Home
+          </NavLink>
         </li>
         <li>
-          <Link to="/about">About Us</Link>
+          <NavLink to="/about" className="nav-item">
+            About Us
+          </NavLink>
         </li>
         <li>
-          <Link to="/services">Services</Link>
+          <NavLink to="/services" className="nav-item">
+            Services
+          </NavLink>
         </li>
         <li>
-          <Link to="/gallery">Gallery</Link>
+          <NavLink to="/gallery" className="nav-item">
+            Gallery
+          </NavLink>
         </li>
         <li>
-          <Link to="/contact">Contact Us</Link>
+          <NavLink to="/contact" className="nav-item">
+            Contact Us
+          </NavLink>
         </li>
       </ul>
       <div className="social-icons">
