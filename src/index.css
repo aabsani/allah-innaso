@@ -128,11 +128,13 @@ body {
   z-index: 1;
 }
 
+/* arrow buttons for slider */
 .swiper-button-next,
 .swiper-button-prev {
   color: #c92a2a;
 }
 
+/* Hover effect for arrow buttons for slider */
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   color: #ffff;
@@ -243,6 +245,50 @@ body {
   padding: 1rem;
 }
 
+/* Services page */
+.services {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+/* overlay content */
+.services-overlay {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+  margin-left: 8rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.services-slider {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  width: 500px;
+  height: 250px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* footer stylings */
 .footer {
   background: #f03e3e;
   color: #e9ecef;
