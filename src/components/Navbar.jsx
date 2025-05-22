@@ -52,6 +52,7 @@ export default function Navbar() {
           </NavLink>
         </li>
       </ul>
+      {/* Facebook, Insta and X social media icons */}
       <div className="social-icons">
         <a
           href="https://facebook.com"
