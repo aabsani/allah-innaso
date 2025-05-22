@@ -36,6 +36,37 @@ body {
   position: fixed;
 }
 
+/* Navbar routes */
+.nav-item {
+  position: relative;
+  padding-bottom: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline effect */
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0; /* anchor the line to the left of container */
+  bottom: 0; /* anchor the line to the bottom of container */
+  height: 3px;
+  width: 0%;
+  background-color: red; /* underline color */
+  transition: width 0.5s ease;
+}
+
+/* Hover animation */
+.nav-item:hover::after {
+  width: 100%;
+}
+
+/* Active tab underline stays visible */
+.nav-item.active::after {
+  width: 100%;
+}
+
 .logo {
   height: 5rem;
   width: 5rem;
@@ -64,6 +95,7 @@ body {
   gap: 1rem;
 }
 
+/* the home page container for the carousel slider and welcome text */
 .home {
   position: relative;
   width: 100%;
