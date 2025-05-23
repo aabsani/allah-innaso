@@ -4,10 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 import "../index.css";
 
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 
 export default function Services() {
   return (
@@ -28,25 +27,30 @@ export default function Services() {
         spaceBetween={30}
         centeredSlides={true}
         pagination={{ clickable: true }}
-        navigation={true}
         loop={true}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination]}
         className="services-slider"
       >
         <SwiperSlide>
+          <h2>Our Company</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ut
-            repellendus veniam numquam perferendis nemo dolor laboriosam vitae,
-            voluptate quod quo quos recusandae, amet, aperiam soluta sapiente
-            pariatur voluptatem quae.
+            At Allah Inna’so Nigeria Limited, we specialize in the supply and
+            distribution of high-quality frozen foods to retail outlets,
+            hospitality establishments, and individual customers.
           </p>
         </SwiperSlide>
         <SwiperSlide>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Accusantium vitae amet commodi quam, voluptate optio laboriosam quia
-            minima veritatis, adipisci impedit quos iste a harum, et sapiente
-            consequuntur eius! Modi!
+            <h2>Our Products</h2>
+            Our diverse product range includes frozen foods such as:
+            Turkey: Whole Turkey, Blanket, 306, 305, Turkey Parts, Turkey
+            Gizzard Chicken: Whole chicken, chicken parts (wings, thighs, and
+            drumsticks), boneless chicken (Fillets), chicken sausage, and
+            Chicken Gizzard. Fish: Cat Fish, Titus Fish, Croaker Fish, Horse
+            Marcerel (Kote), Stock Fish (Kpanla), Shawa, Prawns, Shrimps,
+            calamaris, salmon and other varieties of seafood. Beef: Frozen Beef
+            Cubes, Beef Steaks, Beef Sausage and other beef cuts. French Fries
+            (Chips)
           </p>
         </SwiperSlide>
       </Swiper>
