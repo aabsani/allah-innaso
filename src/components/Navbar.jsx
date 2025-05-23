@@ -22,9 +22,9 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
-      <div>
-        <img src="./images/logo-1.jpeg" alt="logo" className="logo" />
-      </div>
+      <NavLink to="/">
+        <img src="/images/logo-1.jpeg" alt="logo" className="logo" />
+      </NavLink>
       <ul>
         <li>
           <NavLink to="/" className="nav-item">
