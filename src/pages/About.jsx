@@ -5,8 +5,9 @@ export default function About() {
     <section className="about">
       <h2>About Us</h2>
       <p>
-        Allah Inna'So Nigeria Limited is a trusted leader in the distribution of
-        frozen foods across Nigeria.
+        At Allah Inna’so Nigeria Limited, we specialize in the supply and
+        distribution of high-quality frozen foods to retail outlets, hospitality
+        establishments, and individual customers.
       </p>
       <h3>Our Team</h3>
       <ul>
