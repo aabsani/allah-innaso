@@ -237,7 +237,7 @@ a {
   justify-content: center;
 }
 
-/* thumbnails of Who we are and Our Services on the homepage */
+/* thumbnail images of Who we are and Our Services on the homepage */
 .home-images {
   width: 25rem;
   height: auto;
@@ -348,6 +348,29 @@ a {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   padding: 0.7rem 1rem;
   margin-top: 10px;
+}
+
+/* About Us Page */
+.about {
+  /* position: relative; */
+  /* top: 50%; */
+  transform: translateY(50%);
+  text-align: center;
+}
+
+.about h2 {
+  position: relative;
+  text-align: center;
+}
+
+.about p {
+  text-align: center;
+
+  /* max-width: 200px; */
+}
+
+.about li {
+  list-style: none;
 }
 
 /* footer stylings */
