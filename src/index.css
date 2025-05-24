@@ -12,6 +12,10 @@ body {
   color: black;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navbar {
   position: absolute;
   top: 0;
@@ -83,7 +87,6 @@ body {
 .navbar a {
   color: #c92a2a;
   font-size: 20px;
-  text-decoration: none;
 }
 
 .navbar-scrolled a {
@@ -170,7 +173,7 @@ body {
   border-radius: 10px;
   display: flex;
   gap: 4rem;
-  padding: 1.5rem;
+  padding: 1.2rem;
   transition: background-color 0.5s ease-in-out;
 }
 
@@ -192,10 +195,6 @@ body {
 
 .about-home-layout {
   margin-top: 3rem;
-}
-
-.home-more a {
-  text-decoration: none;
 }
 
 .about-home-layout .container {
@@ -267,13 +266,26 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 100vh;
   justify-content: center;
+  gap: 0.5rem;
   margin-left: 8rem;
+  max-width: 500px;
   position: absolute;
+  top: 30%;
   z-index: 2;
 }
 
+.services-overlay h1 {
+  color: #ffff;
+  font-size: 50px;
+}
+
+.services-overlay p {
+  color: #ffff;
+  font-size: 21px;
+}
+
+/* swiper slider */
 .services-slider {
   position: absolute;
   top: 50%;
@@ -286,6 +298,16 @@ body {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.services-slider h2 {
+  color: #c92a2a;
+  text-align: center;
+}
+
+.services-slider p {
+  padding: 1rem 0.5rem;
+  text-align: justify;
 }
 
 /* footer stylings */
