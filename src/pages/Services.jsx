@@ -91,7 +91,7 @@ export default function Services() {
           <div className="wrapper-card">
             <img src="/images/frozen-turkey.jpg" alt="" />
             <h3>Turkey</h3>
-            <p></p>
+            <p>Whole Turkey, Blanket, 306, 305, Turkey Parts, Turkey Gizzard</p>
           </div>
 
           <div className="wrapper-card">
@@ -99,7 +99,11 @@ export default function Services() {
               <img src="/images/frozen-fish.jpg" alt="" />
             </div>
             <h3>Fish</h3>
-            <p></p>
+            <p>
+              Cat Fish, Titus Fish, Croaker Fish, Horse Marcerel (Kote), Stock
+              Fish (Kpanla), Shawa, Prawns, Shrimps, calamaris, salmon and other
+              varieties of seafood.
+            </p>
           </div>
 
           <div className="wrapper-card">
@@ -107,7 +111,9 @@ export default function Services() {
               <img src="/images/frozen-beef.jpg" alt="" />
             </div>
             <h3>Beef</h3>
-            <p></p>
+            <p>
+              Frozen Beef Cubes, Beef Steaks, Beef Sausage and other beef cuts.
+            </p>
           </div>
 
           <div className="wrapper-card">
@@ -115,7 +121,10 @@ export default function Services() {
               <img src="/images/frozen-chicken.jpg" alt="" />
             </div>
             <h3>Chicken</h3>
-            <p></p>
+            <p>
+              Whole chicken, chicken parts (wings, thighs, and drumsticks),
+              boneless chicken (Fillets), chicken sausage, and Chicken Gizzard
+            </p>
           </div>
         </div>
       </section>
