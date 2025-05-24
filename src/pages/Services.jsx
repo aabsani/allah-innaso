@@ -89,25 +89,31 @@ export default function Services() {
       <section>
         <div className="services-wrapper">
           <div className="wrapper-card">
-            <img src="" alt="" />
+            <img src="/images/frozen-turkey.jpg" alt="" />
             <h3>Turkey</h3>
             <p></p>
           </div>
 
           <div className="wrapper-card">
-            <img src="" alt="" />
+            <div>
+              <img src="/images/frozen-fish.jpg" alt="" />
+            </div>
             <h3>Fish</h3>
             <p></p>
           </div>
 
           <div className="wrapper-card">
-            <img src="" alt="" />
+            <div>
+              <img src="/images/frozen-beef.jpg" alt="" />
+            </div>
             <h3>Beef</h3>
             <p></p>
           </div>
 
           <div className="wrapper-card">
-            <img src="" alt="" />
+            <div>
+              <img src="/images/frozen-chicken.jpg" alt="" />
+            </div>
             <h3>Chicken</h3>
             <p></p>
           </div>
