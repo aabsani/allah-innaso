@@ -311,20 +311,43 @@ a {
   text-align: justify;
 }
 
+/* second section of services page */
 .services-wrapper {
   display: flex;
   justify-content: center;
   gap: 4.5rem;
   padding: 3rem;
+  position: relative;
+}
+
+.wrapper-card {
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 2.5rem;
 }
 
 .wrapper-card img {
-  width: 6rem;
-  height: 6rem;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .wrapper-card h3 {
+  color: #c92a2a;
   text-align: center;
+  margin-top: 10px;
+}
+
+.wrapper-card p {
+  line-height: 1.5;
+  max-width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 0.7rem 1rem;
+  margin-top: 10px;
 }
 
 /* footer stylings */
