@@ -311,6 +311,22 @@ a {
   text-align: justify;
 }
 
+.services-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 4.5rem;
+  padding: 3rem;
+}
+
+.wrapper-card img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.wrapper-card h3 {
+  text-align: center;
+}
+
 /* footer stylings */
 .footer {
   background: #f03e3e;
