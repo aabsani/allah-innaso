@@ -352,25 +352,43 @@ a {
 
 /* About Us Page */
 .about {
-  /* position: relative; */
-  /* top: 50%; */
-  transform: translateY(50%);
-  text-align: center;
+  padding-top: 8rem; /* Add space for the navbar */
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 8rem); /* Ensure content fills space above footer */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .about h2 {
-  position: relative;
-  text-align: center;
+  color: #c92a2a;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .about p {
-  text-align: center;
-
-  /* max-width: 200px; */
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  /* margin: 0 auto; */
 }
 
-.about li {
-  list-style: none;
+.about h3 {
+  color: #c92a2a;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+.about .statement-cards {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+}
+
+.about .statement-cards p {
+  max-width: 400px;
+  text-align: justify;
 }
 
 /* footer stylings */
@@ -475,4 +493,13 @@ a {
   padding: 0.5rem;
   border: none;
   cursor: pointer;
+}
+
+/* Content pages (About, Contact, etc) */
+/* Allows makes the content no to overlap the navbar  */
+.content-page {
+  position: relative;
+  padding-top: 8rem;
+  min-height: 100vh;
+  background: #fff;
 }
