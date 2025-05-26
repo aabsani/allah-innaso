@@ -2,6 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
+import TeamGrid from "../components/TeamGrid";
+
 export default function About() {
   return (
     <div className="content-page">
@@ -42,8 +44,7 @@ export default function About() {
         </section>
         <div className="team-wrapper">
           <h2>Meet Our Team</h2>
-          <p>Alh. (Dr.) Muhammed Salifu Abdullahi</p>
-          <p>MD/CHIEF EXECUTIVE OFFICER</p>
+          <TeamGrid />
         </div>
       </section>
     </div>
