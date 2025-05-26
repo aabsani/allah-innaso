@@ -37,9 +37,14 @@ export default function About() {
             </p>
           </div>
         </div>
-        <h3>Our Team</h3>
-        <p>Alh. (Dr.) Muhammed Salifu Abdullahi</p>
-        <p>MD/CHIEF EXECUTIVE OFFICER</p>
+        <section className="about-img">
+          <div className="img-container"></div>
+        </section>
+        <div className="team-wrapper">
+          <h2>Meet Our Team</h2>
+          <p>Alh. (Dr.) Muhammed Salifu Abdullahi</p>
+          <p>MD/CHIEF EXECUTIVE OFFICER</p>
+        </div>
       </section>
     </div>
   );

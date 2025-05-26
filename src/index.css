@@ -352,9 +352,9 @@ a {
 
 /* About Us Page */
 .about {
-  padding-top: 8rem; /* Add space for the navbar */
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 8rem; /* Add space for the navbar */
   min-height: calc(100vh - 8rem); /* Ensure content fills space above footer */
   display: flex;
   flex-direction: column;
@@ -378,6 +378,7 @@ a {
   display: flex;
   gap: 5rem;
   justify-content: space-between;
+  padding-top: 2rem;
 }
 
 .about .statement-cards p {
@@ -385,8 +386,8 @@ a {
   text-align: justify;
 }
 
-.mission,
-.vision {
+.about .mission,
+.about .vision {
   flex: 1;
   padding: 2rem;
   background: #f8f9fa;
@@ -407,6 +408,27 @@ a {
 .about .icon {
   font-size: 1.2rem;
   color: #c92a2a;
+}
+
+.about .team-wrapper h2 {
+  text-align: center;
+}
+
+.about-img {
+  width: 100vw; /* Full viewport width */
+  margin-left: calc(-50vw + 50%); /* breakout the image from the container */
+  margin-right: calc(-50vw + 50%);
+  height: 11rem;
+  overflow: hidden;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/aboutus-team-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* footer stylings */
