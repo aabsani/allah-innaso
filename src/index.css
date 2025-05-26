@@ -414,6 +414,39 @@ a {
   text-align: center;
 }
 
+/* Grid for Team Members */
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.team-card img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-card p {
+  text-align: center;
+}
+
+.team-card .name {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.team-card .job-title,
+.team-card .name {
+  color: #c92a2a;
+}
+
+.team-card .member-bio {
+  text-align: justify;
+}
+
+/* Horizontal Image on About page */
 .about-img {
   width: 100vw; /* Full viewport width */
   margin-left: calc(-50vw + 50%); /* breakout the image from the container */
