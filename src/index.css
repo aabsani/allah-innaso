@@ -589,8 +589,8 @@ a {
   cursor: pointer;
 }
 
-/* Content pages (About, Contact, etc) */
-/* Allows makes the content no to overlap the navbar  */
+/* For Content pages (About, Contact, etc) */
+/* Makes the content below navbar not to overlap the navbar  */
 .content-page {
   position: relative;
   padding-top: 8rem;
