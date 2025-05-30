@@ -87,7 +87,7 @@ export default function Services() {
         </Swiper>
       </section>
       <section>
-        <div className="services-wrapper">
+        <disv className="services-wrapper">
           <div className="wrapper-card">
             <img src="/images/frozen-turkey.jpg" alt="" />
             <h3>Turkey</h3>
@@ -126,7 +126,7 @@ export default function Services() {
               boneless chicken (Fillets), chicken sausage, and Chicken Gizzard
             </p>
           </div>
-        </div>
+        </disv>
       </section>
     </>
   );

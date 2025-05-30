@@ -1,12 +1,13 @@
 import React from "react";
 
 import { useState, useEffect } from "react";
-import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaXTwitter, FaBars, FaTimes } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   // managing scrolling state
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // useEffect for listening to scrolling event, to change navbar appearance
   useEffect(() => {
@@ -20,24 +21,33 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
-    <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
+    <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""} ${mobileMenuOpen ? "mobile-menu-open" : ""}`}>
       <NavLink to="/">
         <img src="/images/logo-1.jpeg" alt="logo" className="logo" />
       </NavLink>
-      <ul>
+      
+      <button className="mobile-menu-button" onClick={toggleMobileMenu}>
+        {mobileMenuOpen ? <FaTimes /> : <FaBars />}
+      </button>
+
+      <ul className={mobileMenuOpen ? "show-mobile-menu" : ""}>
         <li>
-          <NavLink to="/" className="nav-item">
+          <NavLink to="/" className="nav-item" onClick={() => setMobileMenuOpen(false)}>
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" className="nav-item">
+          <NavLink to="/about" className="nav-item" onClick={() => setMobileMenuOpen(false)}>
             About Us
           </NavLink>
         </li>
         <li>
-          <NavLink to="/services" className="nav-item">
+          <NavLink to="/services" className="nav-item" onClick={() => setMobileMenuOpen(false)}>
             Services
           </NavLink>
         </li>
@@ -47,12 +57,12 @@ export default function Navbar() {
           </NavLink>
         </li> */}
         <li>
-          <NavLink to="/contact" className="nav-item">
+          <NavLink to="/contact" className="nav-item" onClick={() => setMobileMenuOpen(false)}>
             Contact Us
           </NavLink>
         </li>
       </ul>
-      {/* Facebook, Insta and X social media icons */}
+      
       <div className="social-icons">
         <a
           href="https://facebook.com"
