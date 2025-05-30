@@ -50,7 +50,7 @@ export const teamMembers = [
   {
     id: 7,
     image: "/images/team/shuaibu-ibrahim.jpeg",
-    name: "Shuaibu Ibrahim",
+    name: "Shaibu Ibrahim",
     title: "Facility Supervisor",
     description:
       "Oversees the day-to-day operations, maintenance, and efficiency of the company’s cold storage and distribution facilities. With a strong focus on quality assurance, safety, and operational excellence, he plays a vital role in ensuring that all frozen food products are stored and handled under optimal conditions. Mall. Ibrahim holds a Bachelor of Science (B.Sc) degree in Political Science bringing a unique perspective to facility management through strong organizational, analytical, and leadership skills.",
