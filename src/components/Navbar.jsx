@@ -41,11 +41,11 @@ export default function Navbar() {
             Services
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/gallery" className="nav-item">
             Gallery
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink to="/contact" className="nav-item">
             Contact Us
