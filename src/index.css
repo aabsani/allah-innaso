@@ -756,7 +756,7 @@ a {
   }
 
   .img-container {
-    background-position: center 85%; /* center, 65% from top */
+    background-position: center 85%; /* center, 85% from top */
   }
 
   .team-grid {
@@ -816,9 +816,9 @@ a {
   }
 
   .navbar ul {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .navbar.navbar-scrolled {
@@ -831,6 +831,7 @@ a {
 
   .social-icons {
     margin-top: 0.5rem;
+    margin-bottom: 5rem;
   }
 
   .logo {
@@ -968,7 +969,7 @@ a {
     top: 0;
     left: 0;
     transform: none;
-    padding: 6rem 1rem 2rem;
+    padding: 9rem 1rem 2rem;
     max-width: 100%;
     text-align: center;
   }
@@ -1008,6 +1009,13 @@ a {
 
   .wrapper-card p {
     font-size: 0.9rem;
+  }
+
+  .content-page {
+    position: relative;
+    padding-top: 10rem;
+    min-height: 100vh;
+    background: #fff;
   }
 }
 
