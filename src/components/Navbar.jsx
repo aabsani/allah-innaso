@@ -1,13 +1,12 @@
 import React from "react";
 
 import { useState, useEffect } from "react";
-import { FaFacebookF, FaInstagram, FaXTwitter, FaBars } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   // managing scrolling state
   const [scrolled, setScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // useEffect for listening to scrolling event, to change navbar appearance
   useEffect(() => {
@@ -21,49 +20,25 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
-  };
-
   return (
-    <nav
-      className={`navbar ${scrolled ? "navbar-scrolled" : ""} ${
-        mobileMenuOpen ? "mobile-menu-open" : ""
-      }`}
-    >
+    <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}}`}>
       <NavLink to="/">
         <img src="/images/logo-1.jpeg" alt="logo" className="logo" />
       </NavLink>
 
-      <button className="mobile-menu-button" onClick={toggleMobileMenu}>
-        {/* {mobileMenuOpen ? <FaTimes /> : <FaBars />} */}
-      </button>
-
-      <ul className={mobileMenuOpen ? "show-mobile-menu" : ""}>
+      <ul>
         <li>
-          <NavLink
-            to="/"
-            className="nav-item"
-            onClick={() => setMobileMenuOpen(false)}
-          >
+          <NavLink to="/" className="nav-item">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to="/about"
-            className="nav-item"
-            onClick={() => setMobileMenuOpen(false)}
-          >
+          <NavLink to="/about" className="nav-item">
             About Us
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to="/services"
-            className="nav-item"
-            onClick={() => setMobileMenuOpen(false)}
-          >
+          <NavLink to="/services" className="nav-item">
             Services
           </NavLink>
         </li>
@@ -73,11 +48,7 @@ export default function Navbar() {
           </NavLink>
         </li> */}
         <li>
-          <NavLink
-            to="/contact"
-            className="nav-item"
-            onClick={() => setMobileMenuOpen(false)}
-          >
+          <NavLink to="/contact" className="nav-item">
             Contact Us
           </NavLink>
         </li>
