@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div className="content-page">
       <section className="about">
-        <h2>Who Are We?</h2>
+        <h2>Who We Are</h2>
         <p>
           Allah Inna’so Nigeria Limited is a duly registered company with the
           Corporate Affairs Commission of Nigeria, bearing registration number
