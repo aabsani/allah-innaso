@@ -10,10 +10,13 @@ export default function About() {
       <section className="about">
         <h2>Who Are We?</h2>
         <p>
-          Allah Inna'so Nigeria Limited is a leading supplier of a diverse range
-          of frozen food products. At Allah Inna'so, we specialize in the supply
-          and distribution of high-quality frozen foods to retail outlets,
-          hospitality establishments, and individual customers.
+          Allah Inna’so Nigeria Limited is a duly registered company with the
+          Corporate Affairs Commission of Nigeria, bearing registration number
+          RC: A74433. The company stands as a reputable and leading supplier of
+          a wide range of high-quality frozen food products. We are committed to
+          the efficient supply and distribution of premium frozen foods to
+          retail businesses, hospitality institutions and individual clients
+          across the country.
         </p>
         <div className="statement-cards">
           <div className="mission">
