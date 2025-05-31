@@ -98,6 +98,7 @@ a {
   gap: 1rem;
 }
 
+/* ----------------------------------------------------- */
 /* the home page container for the carousel slider and welcome text */
 .home {
   position: relative;
@@ -217,6 +218,11 @@ a {
 .inner-wrapper h1 {
   color: #c92a2a;
   font-size: 40px;
+}
+
+.inner-wrapper p {
+  line-height: 2;
+  font-size: 1.1rem;
 }
 
 /* Our services section on homepage */
@@ -350,6 +356,7 @@ a {
   margin-top: 10px;
 }
 
+/* ----------------------------------------------------- */
 /* About Us Page */
 .about {
   max-width: 1200px;
@@ -487,6 +494,7 @@ a {
   background-size: cover;
 }
 
+/* ----------------------------------------------------- */
 /* Contact Page (main component) styles */
 .contact {
   max-width: 1200px;
@@ -574,6 +582,7 @@ a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* ----------------------------------------------------- */
 /* footer stylings */
 .footer {
   background: #f03e3e;
@@ -657,6 +666,7 @@ a {
   gap: 1rem;
 }
 
+/* ----------------------------------------------------- */
 /* Contact Form styles */
 .contact-form {
   display: flex;
@@ -720,7 +730,7 @@ a {
 }
 /* ----------------------------------------------------- */
 
-/* Responsive design for team grid on About Us page */
+/* About Us responsive styles */
 @media (max-width: 1024px) {
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -728,6 +738,27 @@ a {
 }
 
 @media (max-width: 640px) {
+  .about .statement-cards {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  .about .statement-cards p {
+    max-width: 400px;
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+
+  .about-img {
+    height: 8rem;
+    overflow: hidden;
+  }
+
+  .img-container {
+    background-position: center 85%; /* center, 65% from top */
+  }
+
   .team-grid {
     grid-template-columns: 1fr;
   }
@@ -739,7 +770,7 @@ a {
 }
 
 /* ----------------------------------------------------- */
-/* Responsive design for contact page */
+/* Contact page responsive styles */
 @media (max-width: 1024px) {
   .contact-container {
     grid-template-columns: 1fr;
@@ -815,6 +846,7 @@ a {
     padding: 1rem;
   }
 }
+
 /* ----------------------------------------------------- */
 /* Home page responsive styles */
 @media (max-width: 768px) {
