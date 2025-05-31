@@ -447,7 +447,7 @@ a {
 }
 
 .team-card img {
-  height: 20rem;
+  height: 26rem;
   width: 100%;
   object-fit: cover;
   border-radius: 15px;
@@ -766,6 +766,10 @@ a {
   .team-card {
     max-width: 400px;
     margin: 0 auto;
+  }
+
+  .team-card img {
+    height: 30rem;
   }
 }
 
