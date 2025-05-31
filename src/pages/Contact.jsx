@@ -44,8 +44,8 @@ export default function Contact() {
             <div className="info-card">
               <FontAwesomeIcon icon={faClock} className="contact-icon" />
               <h3>Business Hours</h3>
-              <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-              <p>Saturday: 9:00 AM - 2:00 PM</p>
+              <p>Monday - Sunday: 6:00 AM - 6:00 PM</p>
+              {/* <p>Saturday: 9:00 AM - 2:00 PM</p> */}
             </div>
           </div>
 
