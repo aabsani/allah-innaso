@@ -73,7 +73,7 @@ export default function Home() {
           </div>
           <div className="about-img-container">
             <img
-              src="/images/operations-1.jpeg"
+              src="/images/operations-2.jpeg"
               className="home-images"
               alt="about image"
             />
